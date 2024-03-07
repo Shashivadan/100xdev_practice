@@ -1,16 +1,12 @@
 import React, { useState } from "react";
-import { useInterval } from "./hooks/useInterval";
+import { useWindowSize } from "./hooks/useWindowSize";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  useInterval(() => {
-    setCount((count) => count + 1);
-  }, 2);
+  const windowSize = useWindowSize();
 
   return (
     <div>
-      <h1>{count}</h1>
+      hight : {windowSize?.hight} , width : {windowSize?.width}
     </div>
   );
 }
