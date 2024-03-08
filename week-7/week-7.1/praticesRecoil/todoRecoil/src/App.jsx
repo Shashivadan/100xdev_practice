@@ -5,12 +5,14 @@ import { todosAtomFamily } from "../../../7.4/loadables/src/atoms";
 function App() {
   const todo = useRecoilValueLoadable(todosAtomFamily(2));
 
-  const data = todo.contents;
-  console.log(data);
+  const { contents, state } = todo;
+
+  console.log(contents);
+
   return (
     <>
       <div>
-        {todo.state == "loading" ? (
+        {state == "loading" ? (
           <>
             <h1>loading</h1>
           </>

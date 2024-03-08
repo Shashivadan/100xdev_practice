@@ -38,6 +38,16 @@ export const notifications = atom({
   }),
 });
 
+const notificationtom = atom({
+  key: "ninini",
+  default: selector({
+    key: "monkey",
+    get: async () => {
+      console.log(data);
+    },
+  }),
+});
+
 // export const totalNotificationSelector = selector({
 //   key: "totalNotificationSelector",
 //   get: ({ get }) => {
