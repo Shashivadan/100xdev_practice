@@ -161,9 +161,59 @@ interface Status {
   status: "complete" | "incomplete";
 }
 
+type alltodoNamres = Status | Todos;
+
 interface Todolist extends Todos, Status {}
 
 type num = readonly number[];
 let strNumarr: readonly (string | number)[] = [1, 2, 3, 4.5];
 
 let numArr: num = [23, 45, 6, 7, 8];
+
+type Student_Details = {
+  name: string;
+  age: number;
+};
+
+function isLegalStudent(student: Student_Details) {
+  if (student.age > 18) {
+    return true;
+  }
+  return false;
+}
+
+interface TodoForReact {
+  title: string;
+  dis: string;
+  deon: boolean;
+}
+
+let listOfTopos: TodoForReact[];
+
+type strOrNum = string | number;
+
+function ids(unq: strOrNum): void {
+  console.log(unq);
+}
+
+type Employ = {
+  name: string;
+  age: num;
+};
+
+type Manger = {
+  name: string;
+};
+
+enum Drication {
+  up = "up",
+  down = "down",
+  left = "left",
+  right = "right",
+}
+
+function doSomthing(values: Drication) {
+  console.log(Drication.down);
+}
+doSomthing(Drication.down);
+console.log("Drication.up", Drication.up);
