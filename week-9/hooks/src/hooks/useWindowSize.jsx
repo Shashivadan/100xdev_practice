@@ -7,6 +7,7 @@ function useWindowSize() {
     window.addEventListener("resize", (e) => {
       setSize({ width: window.screen.width, hight: window.screen.height });
     });
+
     return () => {
       window.addEventListener("resize", (e) => {
         setSize({ width: window.screen.width, hight: window.screen.height });
