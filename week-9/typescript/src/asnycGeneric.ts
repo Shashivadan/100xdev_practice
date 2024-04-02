@@ -5,10 +5,12 @@ async function wait(duriton: number) {
 
 wait(2000);
 
-async function doSomethingforSomeTime() {
+async function doSomethingSomeTime() {
   return "jdhfajlds";
 }
 
-type doSomethingforSomeType = Awaited<
-  ReturnType<typeof doSomethingforSomeTime>
->;
+type doSomethingSomeType = Awaited<ReturnType<typeof doSomethingSomeTime>>;
+
+// bonfire
+
+// custodian
