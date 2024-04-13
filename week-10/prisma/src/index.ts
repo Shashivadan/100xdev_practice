@@ -23,6 +23,7 @@ async function insertUser(
   console.log(res);
 }
 // insertUser("example.email@gmail.com", "shshibdan", "vadan", "1f2345678");
+// runing the function "insertuser"
 
 interface UpdateParams {
   firstName: string;
