@@ -40,5 +40,11 @@ docker run  -v mongo_volume:/data/db -p 27017:27017 --name mymongo --network my-
 ```
 
 
+###
+```
+postgresql://postgres:mypassword@localhost:5432/mydatabase
+```
+
+
 
 
