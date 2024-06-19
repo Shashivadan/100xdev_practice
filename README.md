@@ -45,6 +45,16 @@ docker run  -v mongo_volume:/data/db -p 27017:27017 --name mymongo --network my-
 postgresql://postgres:mypassword@localhost:5432/mydatabase
 ```
 
+# binding in docker(NEXT.js)
+
+```
+docker run -d -p 3000:3000 -v ./src:<WORKDIR_NAME> <IMAGE_NAME>
+```
+
+
+
+
+
 
 
 
